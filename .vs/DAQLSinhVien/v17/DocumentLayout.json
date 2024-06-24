@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DA phan tich thiet ke he thong\\DAPM2\\DAQLSinhVien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D3AEF0D-2663-42E3-94A9-148F16166ACB}|DAQLSinhVien\\DAQLSinhVien.csproj|e:\\da phan tich thiet ke he thong\\dapm2\\daqlsinhvien\\daqlsinhvien\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D3AEF0D-2663-42E3-94A9-148F16166ACB}|DAQLSinhVien\\DAQLSinhVien.csproj|solutionrelative:daqlsinhvien\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "E:\\DA phan tich thiet ke he thong\\DAPM2\\DAQLSinhVien\\DAQLSinhVien\\FMain.cs",
+              "RelativeDocumentMoniker": "DAQLSinhVien\\FMain.cs",
+              "ToolTip": "E:\\DA phan tich thiet ke he thong\\DAPM2\\DAQLSinhVien\\DAQLSinhVien\\FMain.cs [Design]",
+              "RelativeToolTip": "DAQLSinhVien\\FMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T07:59:07.377Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
