@@ -63,16 +63,6 @@ namespace DAQLSinhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dai_hoc_xay_dung_mien_trung_trang_tuyen_sinh {
-            get {
-                object obj = ResourceManager.GetObject("dai-hoc-xay-dung-mien-trung-trang-tuyen-sinh", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap OIP {
             get {
                 object obj = ResourceManager.GetObject("OIP", resourceCulture);

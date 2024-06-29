@@ -166,7 +166,8 @@ namespace DAQLSinhVien
                     MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     // Ghi log lỗi ở đây (nếu cần)
                 }
-                // Không cần finally block vì using sẽ tự động đóng kết nối
+                btnLuu.Enabled = false;
+                btnThem.Enabled = true;
             }
 
         }

@@ -207,7 +207,7 @@
             this.dgvDKH.Name = "dgvDKH";
             this.dgvDKH.RowHeadersWidth = 51;
             this.dgvDKH.RowTemplate.Height = 24;
-            this.dgvDKH.Size = new System.Drawing.Size(766, 290);
+            this.dgvDKH.Size = new System.Drawing.Size(637, 290);
             this.dgvDKH.TabIndex = 4;
             this.dgvDKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDKH_CellClick);
             // 
@@ -226,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1322, 489);
+            this.ClientSize = new System.Drawing.Size(1168, 489);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvDKH);
             this.Controls.Add(this.button3);

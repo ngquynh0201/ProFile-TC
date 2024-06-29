@@ -20,9 +20,9 @@ namespace DAQLSinhVien {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSet4")]
+    [global::System.Xml.Serialization.XmlRootAttribute("dtDiem")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSet4 : global::System.Data.DataSet {
+    public partial class dtDiem : global::System.Data.DataSet {
         
         private DiemDataTable tableDiem;
         
@@ -30,7 +30,7 @@ namespace DAQLSinhVien {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DataSet4() {
+        public dtDiem() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace DAQLSinhVien {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DataSet4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected dtDiem(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace DAQLSinhVien {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSet4 cln = ((DataSet4)(base.Clone()));
+            dtDiem cln = ((dtDiem)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace DAQLSinhVien {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSet4";
+            this.DataSetName = "dtDiem";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet4.xsd";
+            this.Namespace = "http://tempuri.org/dtDiem.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDiem = new DiemDataTable();
@@ -225,7 +225,7 @@ namespace DAQLSinhVien {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSet4 ds = new DataSet4();
+            dtDiem ds = new dtDiem();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -429,7 +429,7 @@ namespace DAQLSinhVien {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DiemRow AddDiemRow(string MA_SV, string TEN_SV, string MA_MH, decimal DIEM_CC, decimal DIEM_NT, decimal DIEM_GK, decimal DIEM_CK, decimal DIEM_TB) {
+            public DiemRow AddDiemRow(string MA_SV, string TEN_SV, string MA_MH, double DIEM_CC, double DIEM_NT, double DIEM_GK, double DIEM_CK, double DIEM_TB) {
                 DiemRow rowDiemRow = ((DiemRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MA_SV,
@@ -481,15 +481,15 @@ namespace DAQLSinhVien {
                 base.Columns.Add(this.columnTEN_SV);
                 this.columnMA_MH = new global::System.Data.DataColumn("MA_MH", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMA_MH);
-                this.columnDIEM_CC = new global::System.Data.DataColumn("DIEM_CC", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnDIEM_CC = new global::System.Data.DataColumn("DIEM_CC", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDIEM_CC);
-                this.columnDIEM_NT = new global::System.Data.DataColumn("DIEM_NT", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnDIEM_NT = new global::System.Data.DataColumn("DIEM_NT", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDIEM_NT);
-                this.columnDIEM_GK = new global::System.Data.DataColumn("DIEM_GK", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnDIEM_GK = new global::System.Data.DataColumn("DIEM_GK", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDIEM_GK);
-                this.columnDIEM_CK = new global::System.Data.DataColumn("DIEM_CK", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnDIEM_CK = new global::System.Data.DataColumn("DIEM_CK", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDIEM_CK);
-                this.columnDIEM_TB = new global::System.Data.DataColumn("DIEM_TB", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnDIEM_TB = new global::System.Data.DataColumn("DIEM_TB", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDIEM_TB);
                 this.columnMA_SV.AllowDBNull = false;
                 this.columnMA_SV.MaxLength = 10;
@@ -563,7 +563,7 @@ namespace DAQLSinhVien {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet4 ds = new DataSet4();
+                dtDiem ds = new dtDiem();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -676,10 +676,10 @@ namespace DAQLSinhVien {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal DIEM_CC {
+            public double DIEM_CC {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDiem.DIEM_CCColumn]));
+                        return ((double)(this[this.tableDiem.DIEM_CCColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DIEM_CC\' in table \'Diem\' is DBNull.", e);
@@ -692,10 +692,10 @@ namespace DAQLSinhVien {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal DIEM_NT {
+            public double DIEM_NT {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDiem.DIEM_NTColumn]));
+                        return ((double)(this[this.tableDiem.DIEM_NTColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DIEM_NT\' in table \'Diem\' is DBNull.", e);
@@ -708,10 +708,10 @@ namespace DAQLSinhVien {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal DIEM_GK {
+            public double DIEM_GK {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDiem.DIEM_GKColumn]));
+                        return ((double)(this[this.tableDiem.DIEM_GKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DIEM_GK\' in table \'Diem\' is DBNull.", e);
@@ -724,10 +724,10 @@ namespace DAQLSinhVien {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal DIEM_CK {
+            public double DIEM_CK {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDiem.DIEM_CKColumn]));
+                        return ((double)(this[this.tableDiem.DIEM_CKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DIEM_CK\' in table \'Diem\' is DBNull.", e);
@@ -740,10 +740,10 @@ namespace DAQLSinhVien {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal DIEM_TB {
+            public double DIEM_TB {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDiem.DIEM_TBColumn]));
+                        return ((double)(this[this.tableDiem.DIEM_TBColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DIEM_TB\' in table \'Diem\' is DBNull.", e);
@@ -862,7 +862,7 @@ namespace DAQLSinhVien {
         }
     }
 }
-namespace DAQLSinhVien.DataSet4TableAdapters {
+namespace DAQLSinhVien.dtDiemTableAdapters {
     
     
     /// <summary>
@@ -1004,11 +1004,11 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_SV", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_SV", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TEN_SV", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_SV", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_MH", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_MH", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_CC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "DIEM_CC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_NT", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "DIEM_NT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_GK", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "DIEM_GK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_CK", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "DIEM_CK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_TB", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "DIEM_TB", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_CC", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DIEM_CC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_NT", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DIEM_NT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_GK", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DIEM_GK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_CK", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DIEM_CK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIEM_TB", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DIEM_TB", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1033,7 +1033,7 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet4.DiemDataTable dataTable) {
+        public virtual int Fill(dtDiem.DiemDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1046,9 +1046,9 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet4.DiemDataTable GetData() {
+        public virtual dtDiem.DiemDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet4.DiemDataTable dataTable = new DataSet4.DiemDataTable();
+            dtDiem.DiemDataTable dataTable = new dtDiem.DiemDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1056,14 +1056,14 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet4.DiemDataTable dataTable) {
+        public virtual int Update(dtDiem.DiemDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet4 dataSet) {
+        public virtual int Update(dtDiem dataSet) {
             return this.Adapter.Update(dataSet, "Diem");
         }
         
@@ -1086,7 +1086,7 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string MA_SV, string TEN_SV, string MA_MH, global::System.Nullable<decimal> DIEM_CC, global::System.Nullable<decimal> DIEM_NT, global::System.Nullable<decimal> DIEM_GK, global::System.Nullable<decimal> DIEM_CK, global::System.Nullable<decimal> DIEM_TB) {
+        public virtual int Insert(string MA_SV, string TEN_SV, string MA_MH, global::System.Nullable<double> DIEM_CC, global::System.Nullable<double> DIEM_NT, global::System.Nullable<double> DIEM_GK, global::System.Nullable<double> DIEM_CK, global::System.Nullable<double> DIEM_TB) {
             if ((MA_SV == null)) {
                 throw new global::System.ArgumentNullException("MA_SV");
             }
@@ -1106,31 +1106,31 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(MA_MH));
             }
             if ((DIEM_CC.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(DIEM_CC.Value));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((double)(DIEM_CC.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((DIEM_NT.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(DIEM_NT.Value));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((double)(DIEM_NT.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             if ((DIEM_GK.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((decimal)(DIEM_GK.Value));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((double)(DIEM_GK.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             if ((DIEM_CK.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(DIEM_CK.Value));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((double)(DIEM_CK.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             if ((DIEM_TB.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((decimal)(DIEM_TB.Value));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((double)(DIEM_TB.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
@@ -1243,7 +1243,7 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(dtDiem dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._diemTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Diem.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1262,7 +1262,7 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(dtDiem dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._diemTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Diem.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1280,7 +1280,7 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(dtDiem dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._diemTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Diem.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1322,7 +1322,7 @@ namespace DAQLSinhVien.DataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DataSet4 dataSet) {
+        public virtual int UpdateAll(dtDiem dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

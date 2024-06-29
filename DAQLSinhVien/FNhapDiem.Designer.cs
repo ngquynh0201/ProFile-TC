@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbMaMH = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.cbMaSV = new System.Windows.Forms.ComboBox();
             this.txtTenSV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupBox1.Controls.Add(this.cbMaMH);
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.cbMaSV);
             this.groupBox1.Controls.Add(this.txtTenSV);
             this.groupBox1.Controls.Add(this.label3);
@@ -70,14 +70,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chọn sinh viên";
             // 
-            // cbMaMH
+            // textBox1
             // 
-            this.cbMaMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMaMH.FormattingEnabled = true;
-            this.cbMaMH.Location = new System.Drawing.Point(216, 169);
-            this.cbMaMH.Name = "cbMaMH";
-            this.cbMaMH.Size = new System.Drawing.Size(161, 33);
-            this.cbMaMH.TabIndex = 5;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(216, 168);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(219, 30);
+            this.textBox1.TabIndex = 5;
             // 
             // cbMaSV
             // 
@@ -268,7 +267,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(916, 686);
+            this.ClientSize = new System.Drawing.Size(921, 735);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dgvDiem);
             this.Controls.Add(this.groupBox2);
@@ -290,7 +289,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cbMaMH;
         private System.Windows.Forms.ComboBox cbMaSV;
         private System.Windows.Forms.TextBox txtTenSV;
         private System.Windows.Forms.Label label3;
@@ -309,5 +307,6 @@
         private System.Windows.Forms.TextBox txtDCC;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

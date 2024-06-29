@@ -51,6 +51,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FCRKhoa";
             this.Text = "FCRKhoa";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

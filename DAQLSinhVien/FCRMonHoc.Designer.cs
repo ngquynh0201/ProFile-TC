@@ -51,6 +51,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FCRMonHoc";
             this.Text = "FCRMonHoc";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

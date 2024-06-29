@@ -125,6 +125,8 @@ namespace DAQLSinhVien
             finally
             {
                 Mycon.Close();
+                btnLuu.Enabled = false;
+                btnThem.Enabled = true;
             }
 
         }
@@ -170,6 +172,8 @@ namespace DAQLSinhVien
                 finally
                 {
                     Mycon.Close();
+                    btnSua.Enabled = false;
+                    btnXoa.Enabled = false;
                 }
             }
 

@@ -31,14 +31,14 @@ namespace DAQLSinhVien
         {
             if (Mycon.State == ConnectionState.Open) Mycon.Close();
             Mycon.Open();
-            string sql = "select * from Dayhoc";
+            string sql = "select MA_GV,MA_MH from Dayhoc";
             SqlDataAdapter AD = new SqlDataAdapter(sql, Mycon);
             DataTable dt = new DataTable();
             AD.Fill(dt);
             dgvDayHoc.DataSource = dt;
-            dgvDayHoc.Columns[0].HeaderText = "ID dạy học";
-            dgvDayHoc.Columns[1].HeaderText = "Mã giáo viên";
-            dgvDayHoc.Columns[2].HeaderText = "Mã môn học";
+            //dgvDayHoc.Columns[0].HeaderText = "ID dạy học";
+            dgvDayHoc.Columns[0].HeaderText = "Mã giáo viên";
+            dgvDayHoc.Columns[1].HeaderText = "Mã môn học";
             dgvDayHoc.AllowUserToAddRows = false;
             dgvDayHoc.EditMode = DataGridViewEditMode.EditProgrammatically;
             Mycon.Close();
@@ -48,9 +48,9 @@ namespace DAQLSinhVien
         {
             {
                 dong = e.RowIndex;
-                txtIdDayHoc.Text = dgvDayHoc.Rows[dong].Cells[0].Value.ToString();
-                cbMaGV.Text = dgvDayHoc.Rows[dong].Cells[1].Value.ToString();
-                cbMaMH.Text = dgvDayHoc.Rows[dong].Cells[2].Value.ToString();
+                //txtIdDayHoc.Text = dgvDayHoc.Rows[dong].Cells[0].Value.ToString();
+                cbMaGV.Text = dgvDayHoc.Rows[dong].Cells[0].Value.ToString();
+                cbMaMH.Text = dgvDayHoc.Rows[dong].Cells[1].Value.ToString();
             }
         }
 

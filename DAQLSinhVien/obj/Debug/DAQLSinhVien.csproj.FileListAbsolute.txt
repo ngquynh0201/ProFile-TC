@@ -37,5 +37,5 @@ E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQL
 E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQLSinh.ED2CC4C5.Up2Date
 E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQLSinhVien.FCRGiaoVien.resources
 E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQLSinhVien.FCRKhoa.resources
-E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQLSinhVien.FCRDiem.resources
 E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQLSinhVien.FCRMonHoc.resources
+E:\DA phan tich thiet ke he thong\DAPM2\DAQLSinhVien\DAQLSinhVien\obj\Debug\DAQLSinhVien.FCRDiem.resources

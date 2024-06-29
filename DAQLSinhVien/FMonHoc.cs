@@ -110,6 +110,8 @@ namespace DAQLSinhVien
                 // Xử lý ngoại lệ
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 // Cân nhắc việc ghi lại chi tiết ngoại lệ để phân tích thêm
+                btnLuu.Enabled = true;
+                btnThem.Enabled = false;
             }
 
         }
@@ -153,6 +155,8 @@ namespace DAQLSinhVien
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 // Cân nhắc việc ghi log lỗi để phân tích thêm
+                btnSua.Enabled = false;
+                btnXoa.Enabled = false;
             }
 
         }

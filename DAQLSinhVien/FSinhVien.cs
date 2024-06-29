@@ -68,6 +68,8 @@ namespace DAQLSinhVien
 
             cbNamHoc.Text = dgvSinhVien.CurrentRow.Cells["NAM_HOC"].Value.ToString();
             txtHK.Text = dgvSinhVien.CurrentRow.Cells["HOC_KY"].Value.ToString();
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
         }
 
         private void LoadDL_Combobox()
@@ -322,6 +324,8 @@ namespace DAQLSinhVien
             {
                 // Đảm bảo kết nối luôn được đóng
                 Mycon.Close();
+                btnXoa.Enabled = false;
+                btnSua.Enabled = false;
             }
 
 
@@ -343,6 +347,8 @@ namespace DAQLSinhVien
             MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Load_DGV();
             Mycon.Close();
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -360,6 +366,9 @@ namespace DAQLSinhVien
             txtDiaChi.Clear();
             txtHK.Clear(); 
             chkGioitinh.Checked = true;
+            btnLuu.Enabled = true;
+           
+            btnThem.Enabled = false;
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

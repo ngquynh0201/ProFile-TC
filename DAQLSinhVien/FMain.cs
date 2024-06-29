@@ -10,52 +10,7 @@ namespace DAQLSinhVien
             InitializeComponent();
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FLogin FrmLogin = new FLogin();
-            FrmLogin.Show();
-            this.Hide();
-        }
-
-        private void thôngTinSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FSinhVien FrmSinhVien = new FSinhVien();
-            FrmSinhVien.Show();
-            
-        }
-
-        private void đăngKýMônHọcToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FDangKyMH fDangKyMH = new FDangKyMH();
-            fDangKyMH.Show();
-           
-        }
-
-        private void ThôngtinGiaoVienToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FGiaoVien fGiaoVien = new FGiaoVien();
-            fGiaoVien.Show();
-        }
-
-        private void nhậpĐiểmSvToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            FNhapDiem fNhapDiem = new FNhapDiem();
-            fNhapDiem.Show();
-        }
-
-        private void thôngTinKhoaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FKhoa fKhoa = new FKhoa();
-            fKhoa.Show();
-            
-        }
-
-        private void danhSáchMônHọcToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FMonHoc fMonHoc = new FMonHoc();
-            fMonHoc.Show();
-            
-        }
+        
 
         private void FMain_Load(object sender, EventArgs e)
         {
@@ -108,36 +63,80 @@ namespace DAQLSinhVien
             }
         }
 
-        private void inDanhSáchSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+       
+
+        private void đăngXuấtToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FLogin FrmLogin = new FLogin();
+            FrmLogin.Show();
+            this.Hide();
+        }
+
+        private void thôngTinGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            FGiaoVien fGiaoVien = new FGiaoVien();
+            fGiaoVien.Show();
+        }
+
+        private void nhậpĐiểmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FNhapDiem fNhapDiem = new FNhapDiem();
+            fNhapDiem.Show();
+        }
+
+        private void thôngTinKhoaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FKhoa fKhoa = new FKhoa();
+            fKhoa.Show();
+        }
+
+        private void thôngTinMônHọcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FMonHoc fMonHoc = new FMonHoc();
+            fMonHoc.Show();
+        }
+
+        private void thôngTinSinhVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FSinhVien FrmSinhVien = new FSinhVien();
+            FrmSinhVien.Show();
+        }
+
+        private void đăngKýMônHọcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FDangKyMH fDangKyMH = new FDangKyMH();
+            fDangKyMH.Show();
+        }
+
+        private void inDanhSáchSinhViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FCRSinhVien fCRSinhVien = new FCRSinhVien();
             fCRSinhVien.Show();
         }
 
-        private void inDanhSáchĐiểmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FCRDiem fCRDiem = new FCRDiem();
-            fCRDiem.Show();
-        }
-
-        private void inDanhSáchMônHọcToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FCRMonHoc fCRMonHoc = new FCRMonHoc();
-            fCRMonHoc.Show();
-        }
-
-        private void inDanhSáchKhoaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FCRKhoa fCRKhoa = new FCRKhoa();
-            fCRKhoa.Show();
-        }
-
-        private void inDanhSáchGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        private void inDanhSáchGiáoViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FCRGiaoVien fCRGiaoVien = new FCRGiaoVien();
             fCRGiaoVien.Show();
         }
 
-        
+        private void inDanhSáchKhoaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FCRKhoa fCRKhoa = new FCRKhoa();
+            fCRKhoa.Show();
+        }
+
+        private void inDanhSáchMônHọcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FCRMonHoc fCRMonHoc = new FCRMonHoc();
+            fCRMonHoc.Show();
+        }
+
+        private void inDanhSáchĐiểmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FCRDiem fCRDiem = new FCRDiem();
+            fCRDiem.Show();
+        }
     }
 }

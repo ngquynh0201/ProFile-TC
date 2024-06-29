@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrystalDecisions.ReportAppServer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace DAQLSinhVien
         {
             LoadDLSV_Combobox();
             Load_DGV();
-            LoadDL_MaMH();
+           
         }
 
         private void LoadDLSV_Combobox()
@@ -43,7 +44,7 @@ namespace DAQLSinhVien
         {
             if (Mycon.State == ConnectionState.Open) Mycon.Close();
             Mycon.Open();
-            SqlCommand cmd = new SqlCommand("SELECT TEN_SV FROM SinhVien WHERE MA_SV = @masv", Mycon);
+            SqlCommand cmd = new SqlCommand("SELECT TEN_SV FROM SinhVien  WHERE MA_SV = @masv", Mycon);
             cmd.Parameters.AddWithValue("@masv", cbMaSV.SelectedValue.ToString());
             SqlDataReader rd = cmd.ExecuteReader();
             if (rd.Read())
@@ -86,16 +87,7 @@ namespace DAQLSinhVien
         {
             
         }
-        private void LoadDL_MaMH()
-        {
-            string sql = "select MA_MH from MonHoc";
-            SqlDataAdapter adapter = new SqlDataAdapter(sql, Mycon);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            cbMaMH.DataSource = dt;
-            cbMaMH.DisplayMember = "MA_MH";
-            cbMaMH.ValueMember = "MA_MH";
-        }
+       
 
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -129,7 +121,7 @@ namespace DAQLSinhVien
                 // Lấy mã sinh viên và mã môn học từ DataGridView và ComboBox
                 string maSV = dgvDiem.Rows[dong].Cells[0].Value.ToString();
 
-                string maMH = cbMaMH.SelectedValue.ToString();
+                string maMH = dgvDiem.Rows[dong].Cells[2].ToString();
 
 
                 // Cập nhật điểm vào cơ sở dữ liệu (CSDL)
@@ -193,11 +185,13 @@ namespace DAQLSinhVien
             dong = e.RowIndex;
             cbMaSV.Text = dgvDiem.Rows[dong].Cells[0].Value.ToString();
             txtTenSV.Text = dgvDiem.Rows[dong].Cells[1].Value.ToString();
-            cbMaMH.Text = dgvDiem.Rows[dong].Cells[2].Value.ToString();
+            textBox1.Text = dgvDiem.Rows[dong].Cells[2].Value.ToString();
             txtDNT.Text = dgvDiem.Rows[dong].Cells[4].Value.ToString();
             txtDCC.Text = dgvDiem.Rows[dong].Cells[3].Value.ToString();
             txtDGK.Text = dgvDiem.Rows[dong].Cells[5].Value.ToString();
             txtDCK.Text = dgvDiem.Rows[dong].Cells[6].Value.ToString();
         }
+
+        
     }
 }

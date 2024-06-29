@@ -66,16 +66,16 @@ namespace DAQLSinhVien
         {
             if (Mycon.State == ConnectionState.Open) Mycon.Close();
             Mycon.Open();
-            string sql = "select * from DangKyHoc";
+            string sql = "select MA_SV,MA_MH,TEN_MH,NgayDK from DangKyHoc";
             SqlDataAdapter AD = new SqlDataAdapter(sql, Mycon);
             DataTable dt = new DataTable();
             AD.Fill(dt);
             dgvDKH.DataSource = dt;
-            dgvDKH.Columns[0].HeaderText = "Mã đăng ký";
-            dgvDKH.Columns[1].HeaderText = "Mã sinh viên";
-            dgvDKH.Columns[2].HeaderText = "Mã môn học";
-            dgvDKH.Columns[3].HeaderText = "Tên môn học";
-            dgvDKH.Columns[4].HeaderText = "Ngày dạy học";
+            //dgvDKH.Columns[0].HeaderText = "Mã đăng ký";
+            dgvDKH.Columns[0].HeaderText = "Mã sinh viên";
+            dgvDKH.Columns[1].HeaderText = "Mã môn học";
+            dgvDKH.Columns[2].HeaderText = "Tên môn học";
+            dgvDKH.Columns[3].HeaderText = "Ngày dạy học";
             dgvDKH.AllowUserToAddRows = false;
             dgvDKH.EditMode = DataGridViewEditMode.EditProgrammatically;
             Mycon.Close();
@@ -137,11 +137,11 @@ namespace DAQLSinhVien
         private void dgvDKH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             dong = e.RowIndex;
-            txtMaDK.Text = dgvDKH.Rows[dong].Cells[0].Value.ToString();
-            cmbMaSV.Text = dgvDKH.Rows[dong].Cells[1].Value.ToString();
-            cmbMaMH.Text = dgvDKH.Rows[dong].Cells[2].Value.ToString();
-            txtTenMH.Text = dgvDKH.Rows[dong].Cells[3].Value.ToString();
-            dtpNgayDK.Text = dgvDKH.Rows[dong].Cells[4].Value.ToString();
+            //txtMaDK.Text = dgvDKH.Rows[dong].Cells[0].Value.ToString();
+            cmbMaSV.Text = dgvDKH.Rows[dong].Cells[0].Value.ToString();
+            cmbMaMH.Text = dgvDKH.Rows[dong].Cells[1].Value.ToString();
+            txtTenMH.Text = dgvDKH.Rows[dong].Cells[2].Value.ToString();
+            dtpNgayDK.Text = dgvDKH.Rows[dong].Cells[3].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
