@@ -30,7 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chkGioitinh = new System.Windows.Forms.CheckBox();
-            this.txtHK = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtTenSV = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -39,7 +38,6 @@
             this.cbNamHoc = new System.Windows.Forms.ComboBox();
             this.cbMaLop = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,7 +61,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.chkGioitinh);
-            this.groupBox1.Controls.Add(this.txtHK);
             this.groupBox1.Controls.Add(this.txtDiaChi);
             this.groupBox1.Controls.Add(this.txtTenSV);
             this.groupBox1.Controls.Add(this.txtSDT);
@@ -72,7 +69,6 @@
             this.groupBox1.Controls.Add(this.cbNamHoc);
             this.groupBox1.Controls.Add(this.cbMaLop);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -97,13 +93,6 @@
             this.chkGioitinh.TabIndex = 17;
             this.chkGioitinh.Text = "Nam";
             this.chkGioitinh.UseVisualStyleBackColor = true;
-            // 
-            // txtHK
-            // 
-            this.txtHK.Location = new System.Drawing.Point(837, 222);
-            this.txtHK.Name = "txtHK";
-            this.txtHK.Size = new System.Drawing.Size(116, 30);
-            this.txtHK.TabIndex = 16;
             // 
             // txtDiaChi
             // 
@@ -167,15 +156,6 @@
             this.label9.Size = new System.Drawing.Size(84, 25);
             this.label9.TabIndex = 8;
             this.label9.Text = "Mã lớp:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(702, 227);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 25);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Học kỳ:";
             // 
             // label7
             // 
@@ -365,7 +345,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvSinhVien;
         private System.Windows.Forms.CheckBox chkGioitinh;
-        private System.Windows.Forms.TextBox txtHK;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtTenSV;
         private System.Windows.Forms.TextBox txtSDT;
@@ -374,7 +353,6 @@
         private System.Windows.Forms.ComboBox cbNamHoc;
         private System.Windows.Forms.ComboBox cbMaLop;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

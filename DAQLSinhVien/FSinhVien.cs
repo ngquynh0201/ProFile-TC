@@ -45,7 +45,7 @@ namespace DAQLSinhVien
             dgvSinhVien.Columns[5].HeaderText = "Số Điện Thoại";
             dgvSinhVien.Columns[6].HeaderText = "Ngày sinh";
             dgvSinhVien.Columns[7].HeaderText = "Năm Học";
-            dgvSinhVien.Columns[8].HeaderText = "Học Kỳ";
+           
             dgvSinhVien.AllowUserToAddRows = false;
             dgvSinhVien.EditMode = DataGridViewEditMode.EditProgrammatically;
             dgvSinhVien.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -67,7 +67,7 @@ namespace DAQLSinhVien
             dtpNgaysinh.Text = dgvSinhVien.CurrentRow.Cells["NGAY_SINH"].Value.ToString();
 
             cbNamHoc.Text = dgvSinhVien.CurrentRow.Cells["NAM_HOC"].Value.ToString();
-            txtHK.Text = dgvSinhVien.CurrentRow.Cells["HOC_KY"].Value.ToString();
+            
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
         }
@@ -123,10 +123,7 @@ namespace DAQLSinhVien
             SqlCommand cmd = new SqlCommand("SELECT HOC_KY FROM NIENKHOA WHERE NAM_HOC = @namhoc", Mycon);
             cmd.Parameters.AddWithValue("@namhoc", cbNamHoc.SelectedValue.ToString());
             SqlDataReader rd = cmd.ExecuteReader();
-            if (rd.Read())
-            {
-                txtHK.Text = rd.GetString(0);
-            }
+            
             Mycon.Close();
             Load_DGV() ;
         }
@@ -228,7 +225,7 @@ namespace DAQLSinhVien
                     cmdInsert.Parameters.AddWithValue("@dienthoai", txtSDT.Text);
                     cmdInsert.Parameters.AddWithValue("@ngaysinh", dtpNgaysinh.Value);
                     cmdInsert.Parameters.AddWithValue("@namhoc", cbNamHoc.Text);
-                    cmdInsert.Parameters.AddWithValue("@hocky", txtHK.Text);
+                    
 
                     cmdInsert.ExecuteNonQuery();
                     MessageBox.Show("Đã lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -297,7 +294,7 @@ namespace DAQLSinhVien
                             cmdUpdate.Parameters.AddWithValue("@dienthoai", txtSDT.Text);
                             cmdUpdate.Parameters.AddWithValue("@ngaysinh", dtpNgaysinh.Value);
                             cmdUpdate.Parameters.AddWithValue("@namhoc", cbNamHoc.Text);
-                            cmdUpdate.Parameters.AddWithValue("@hocky", txtHK.Text);
+                            
                             cmdUpdate.ExecuteNonQuery();
                             MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Load_DGV(); // Tải lại dữ liệu sau khi cập nhật
@@ -364,7 +361,7 @@ namespace DAQLSinhVien
             txtTenSV.Clear();
             txtSDT.Clear();
             txtDiaChi.Clear();
-            txtHK.Clear(); 
+           
             chkGioitinh.Checked = true;
             btnLuu.Enabled = true;
            
@@ -379,7 +376,7 @@ namespace DAQLSinhVien
             dtpNgaysinh.ResetText();
             txtSDT.Clear();
             txtDiaChi.Clear();
-            txtHK.Clear();
+           
             cbMaLop.ResetText();
             cbNamHoc.ResetText();
             btnLuu.Enabled = true;

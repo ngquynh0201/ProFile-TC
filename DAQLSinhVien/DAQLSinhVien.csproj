@@ -84,10 +84,10 @@
       <DependentUpon>CRSinhVien.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DataSet1.Designer.cs">
+    <Compile Include="DtSV.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <DependentUpon>DtSV.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -262,16 +262,16 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <None Include="DtSV.xsc">
+      <DependentUpon>DtSV.xsd</DependentUpon>
     </None>
-    <None Include="DataSet1.xsd">
+    <None Include="DtSV.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>DtSV.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <None Include="DtSV.xss">
+      <DependentUpon>DtSV.xsd</DependentUpon>
     </None>
     <None Include="DataSet2.xsc">
       <DependentUpon>DataSet2.xsd</DependentUpon>
